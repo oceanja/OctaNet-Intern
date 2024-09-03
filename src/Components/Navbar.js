@@ -15,6 +15,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -46,11 +47,11 @@ const Navbar = () => {
         <img src="/logo.png" width="250px" height="250px" alt="Logo" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
+      <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/testimonials">Testimonials</a>
+        <a href="/contact">Contact</a>
+        <a href="/cart">
           <BsCart2 className="navbar-cart-icon" />
         </a>
         <button className="primary-button">Book Now!</button>

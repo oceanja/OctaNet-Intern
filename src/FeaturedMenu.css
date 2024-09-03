@@ -1,0 +1,103 @@
+.featured-menu {
+    padding: 4rem 2rem;
+    background-color: transparent; /* No background color to match existing style */
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem; /* Rounded corners for consistency */
+  }
+
+  
+  
+  .featured-menu .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: green; /* Match the color with your headings */
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .section-title:hover {
+    color: darkgreen; /* Darker color on hover for consistency with heading */
+  }
+  
+  .menu-slider {
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 1rem 0; /* Space above and below the slider */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+  }
+  
+  .menu-slider::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+  }
+  
+  .menu-slider::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 105, 180, 0.7); /* Pink background for the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  }
+  
+  .menu-slider::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track background */
+  }
+  
+  .menu-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    flex: 0 0 auto; /* Prevent flex item from shrinking */
+    margin-right: 1rem; /* Space between items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5); /* Pinkish glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu-item img:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+    box-shadow: 0 6px 15px rgba(255, 105, 180, 0.7); /* Enhanced pinkish glow */
+  }
+  
+  .menu-slider .slick-prev,
+  .menu-slider .slick-next {
+    background-color: rgba(255, 105, 180, 0.7); /* Pink background for buttons */
+    border-radius: 50%;
+    border: none; /* Remove outline */
+    color: white; /* Button icon color */
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .menu-slider .slick-prev:hover,
+  .menu-slider .slick-next:hover {
+    background-color: rgba(255, 105, 180, 0.9); /* Slightly darker pink on hover */
+  }
+  
+  .menu-slider .slick-prev {
+    left: 10px;
+  }
+  
+  .menu-slider .slick-next {
+    right: 10px;
+  }
+  
+  .menu-slider .slick-prev:before,
+  .menu-slider .slick-next:before {
+    color: white; /* Icon color */
+    font-size: 1.5rem;
+  }
+  
